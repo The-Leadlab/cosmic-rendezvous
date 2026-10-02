@@ -10,6 +10,8 @@ import Game from "./pages/Game";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import Dmca from "./pages/Dmca";
 import GameNotification from "./components/GameNotification";
 import { PrivacyConsentModal } from "./components/PrivacyConsentModal";
 
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/game" element={<Game />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/dmca" element={<Dmca />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
